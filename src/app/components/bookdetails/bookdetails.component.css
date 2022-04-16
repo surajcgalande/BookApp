@@ -1,0 +1,84 @@
+body{
+    background-color: darkcyan;
+}
+
+.details{
+    width: 50%;
+    padding-top: 2em;
+    margin-left: 25%;
+    margin-top: 3em;
+    background-color: lightskyblue;
+    box-shadow: 0px 10px 10px 0px black;
+    border: 2px solid lightseagreen;
+}
+
+.bookCover{
+    width: 300px;
+    height: 350px;
+    padding-top: 1em;
+    padding-right: 0.5em; 
+    margin-bottom: 2em;   
+}
+
+.bookTitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: darkslateblue;
+    padding-top: 10px;
+    text-shadow: 1px 1px lime;
+}
+
+.bookPrice{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: darkcyan;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+    left: -100%;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.bookPrice:hover{
+    left: 0;
+    transform: scaleY(2);
+    transition: all 0.3s ease-in-out;  
+    }
+
+.description{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    color: steelblue;
+    margin-right: 1em;
+    height: 190px;  
+    text-align: justify;  
+}
+
+.description p{
+    height: 190px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.description::first-letter{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    color: steelblue;
+}
+
+    .btnRow{
+        margin-top: 2em;
+    }
+
+    .btnBuy{
+        width: 70px;
+        margin-bottom: 1em;
+        transform: scaleX(1);
+        transition: all 0.5s ease-in-out;      
+    }
+    
+    .btnBuy:hover{
+        transform: scaleX(1.5);
+        transition: all 0.5s ease-in-out;
+    }

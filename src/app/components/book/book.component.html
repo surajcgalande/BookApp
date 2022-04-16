@@ -1,0 +1,15 @@
+<div class="container" #bookContainer>
+    <div class="row" #bookRow>
+        <div class="book" *ngFor="let book of bookList">
+            <input type="text" #bookId hidden [value]='book.bookId'>
+            <img [src]='book.cover' class="bookCover">
+            <h3 class="bookTitle">{{book.title}}</h3>
+            <div class="row">
+                <div class="bookPrice col-md-6">{{book.price | currency:'INR'}}</div>
+                <div class="col-md-6">
+                    <button (click)="showBookDetails(bookId.value)" class="btnBuy btn btn-success">Details</button>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
