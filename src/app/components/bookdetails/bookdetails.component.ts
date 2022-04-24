@@ -15,7 +15,7 @@ export class BookDetailsComponent implements OnInit {
     cover:string='';
 
     constructor(private activatedRoute:ActivatedRoute){
-        this.bookId = activatedRoute.snapshot.params['bookId'];
+        this.bookId = activatedRoute.snapshot.params['id'];
         this.title = activatedRoute.snapshot.params['title'];
         this.description = activatedRoute.snapshot.params['description'];
         this.price = activatedRoute.snapshot.params['price'];
